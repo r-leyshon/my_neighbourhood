@@ -10,29 +10,31 @@ knit: (function(inputFile, encoding) {
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(accessrmd)
 ```
 
-Column {data-width=650}
+Elevation Shots {.tabset}
 -----------------------------------------------------------------------
 
-### Chart A
+### 2020s Colour
 
-```{r}
-
+```{r, warning=FALSE}
+access_img(img = "../www/images/Rogerstone Jubilee Park 2020 (Colour).JPG",
+           alt = "Colour aerial photo of Jubilee Park estate circa 2020")
 ```
 
-Column {data-width=350}
------------------------------------------------------------------------
 
-### Chart B
+### 2020s B&W
 
-```{r}
-
+```{r, warning=FALSE}
+access_img(img = "../www/images/Rogerstone Jubilee Park 2020 (B&W).jpg",
+           alt = "Black & white aerial photo of Jubilee Park estate circa 2020")
 ```
 
-### Chart C
+### 1980s B&W
 
-```{r}
-
+```{r, warning=FALSE}
+access_img(img = "../www/images/Rogerstone Alcan Original.JPG",
+           alt = "Black & white Aerial photo of Alcan estate circa 1980")
 ```
 
