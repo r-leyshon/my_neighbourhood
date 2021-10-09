@@ -7,6 +7,12 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "..") })
 ---
+<html lang="en">
+  <header>
+    <meta charset="utf-8"/>
+    <title>Jubilee Park</title>
+  </header>
+  <body>
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
@@ -34,7 +40,11 @@ access_img(img = "../www/images/Rogerstone Jubilee Park 2020 (B&W).jpg",
 ### 1980s B&W
 
 ```{r, warning=FALSE}
-access_img(img = "../www/images/Rogerstone Alcan Original.JPG",
-           alt = "Black & white Aerial photo of Alcan estate circa 1980")
+ access_img(img = "../www/images/Rogerstone Alcan Original.JPG",
+            alt = "Black & white Aerial photo of Alcan estate circa 1980")
 ```
 
+
+
+  </body>
+</html>
